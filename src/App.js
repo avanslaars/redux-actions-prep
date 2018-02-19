@@ -6,6 +6,7 @@ import TodoForm from './components/TodoForm'
 import TodoList from './components/TodoList'
 import Message from './components/Message'
 import Footer from './components/Footer'
+import Loader from './components/Loader'
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
         <Router>
           <div className="Todo-App">
             <Message />
+            <Loader />
             <TodoForm />
             <Route path='/:filter?' render={({match}) => (
                 <TodoList filter={match.params.filter} />

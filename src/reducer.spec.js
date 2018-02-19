@@ -1,4 +1,4 @@
-import reducer from './todo'
+import reducer from './reducer'
 
 describe('Todo Reducer', () => {
   test('returns a state object', () => {

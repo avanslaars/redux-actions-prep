@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import {updateCurrent, saveTodo} from '../reducers/todo'
+import {updateCurrent, saveTodo} from '../reducer'
 
 class TodoForm extends Component {
   handleInputChange = (evt) => {
@@ -26,6 +26,6 @@ class TodoForm extends Component {
 }
 
 export default connect(
-  (state) => ({currentTodo: state.todo.currentTodo}),
+  (state) => ({currentTodo: state.currentTodo}),
   {updateCurrent, saveTodo}
 )(TodoForm)

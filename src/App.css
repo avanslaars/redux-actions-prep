@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  /*animation: App-logo-spin infinite 20s linear;*/
   height: 80px;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .Todo-App {
-  padding-top:35px;
+  padding-top:40px;
   display: inline-block;
   text-align: left;
 }
@@ -47,9 +47,9 @@ li {
   border: solid 1px #61DAFB;
   position: absolute;
   text-align: center;
-  width:200px;
+  width:300px;
   left: 50%;
-  margin-left:-100px;
+  margin-left:-150px;
   top: 200px;
 }
 
@@ -73,4 +73,13 @@ li:hover span.delete-item {
 a {
   padding-left: 2px;
   padding-right: 2px;
+}
+
+.loader {
+  align: center;
+  width:50px;
+  left: 50%;
+  margin-left:-25px;
+  top: 195px;
+  position:absolute;
 }

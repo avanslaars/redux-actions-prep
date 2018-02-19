@@ -1,3 +1,22 @@
+## Redux Actions Course
+
+_Starting point should include a solid set of tests to add to_
+_because of the way createActions names action creators - start with VERB_NOUN action constants_
+_README should include instructions to run project locally & for deployment_
+_create a simpler app - single state object/reducer_
+
+- Overview of App & Install redux actions as a dependency
+- `import { createAction } from 'redux-actions'` - change out `updateCurrent`
+- Show createAction with payload creator fn - use "Sentence case function" w/ unit test
+- Show createAction with metaCreator - Just as an FYI - save "raw" version of input...
+- Show createActions (plural) with action map, show identity function, and meta function in array
+- Use `combineActions` for something like message visibility? - maybe a generic loader in place of some of the messages?
+- Show a single `handleAction` for `TODOS_LOAD` - export as reducer... works, but nothing else is handled
+- Show handleActions to cover the remaining reducer needs
+- Show error condition - add catch to fetchTodos - catch dispatches loadTodos with error, stop server, error will be handled by `throw` in reducer map - use it to show an error message
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
